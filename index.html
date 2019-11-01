@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./dist/app.css">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <h1 class="header__title">TODOList</h1>
+  </header>
+  <main class="content">
+    <div class="filter">
+      <div class="filter__item">
+        <input
+            type="search"
+            class="filter__search"
+            placeholder="search by title"
+        />
+        <img src="./src/images/search-icon.png" alt="">
+      </div>
+      <div class="filter__item">
+        <select class="select-status select">
+          <option value="all">all</option>
+          <option value="open">open</option>
+          <option value="done">done</option>
+        </select>
+      </div>
+      <div class="filter__item">
+        <select class="select-priority select" required="">
+          <option value="all">all</option>
+          <option value="high">high</option>
+          <option value="normal">normal</option>
+          <option value="low">low</option>
+        </select>
+      </div>
+      <div class="filter__item">
+        <button class="filter__create-btn btn">Create</button>
+      </div>
+    </div>
+    <div class="todo-list"></div>
+    <div class="form-wrapper display_none">
+      <form class="form">
+        <label for="title"> Title</label>
+        <input required id="title"
+               type="text" class="title_input"
+               value="" placeholder="Title">
+        <label for="description"> Description</label>
+        <input type="text" class="description_input"
+               value="" placeholder="Description"
+               id="description">
+        <label for="priority">Priority</label>
+        <select class="change-priority" id="priority">
+          <option value="normal">normal</option>
+          <option value="high">high</option>
+          <option value="low">low</option>
+        </select>
+        <div class="form__footer">
+          <button type="button" class="cancel-btn btn">Cancel</button>
+          <button type="submit" class="button btn">Save</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <h1>Oleksandr Romanov</h1>
+  </footer>
+</div>
+
+<script src="./dist/app.js"></script>
+</body>
+</html>
