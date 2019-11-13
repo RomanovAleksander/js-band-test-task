@@ -7,7 +7,7 @@
   * Search todo-item by **title**;
   * Filter todo-item by **status**;
   * Filter todo-item by **priority**.
-* [App on GitHub Pages](https://romanovaleksander.github.io/todoListApp/)
+* [App on GitHub Pages](https://romanovaleksander.github.io/js-band-test-task/)
  ## Using
  Commands:
  ```bash
